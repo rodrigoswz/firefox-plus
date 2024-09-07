@@ -13,7 +13,7 @@ Clear-Host
 
 Write-Host ("{0}`n" -f ($logo -join "`n")) -ForegroundColor Blue
 
-$firefoxProfilesPath = Join-Path -Path "$env:APPDATA\Mozilla\Firefox\Profiles" -ChildPath "*.default-release"
+$firefoxProfilesPath = Join-Path -Path "C:\Users\rodri\AppData\Local\Packages\Mozilla.Firefox_n80bbvh6b1yt2\LocalCache\Roaming\Mozilla\Firefox\Profiles" -ChildPath "*.default-release"
 $user_script = "user.js"
 if (-not (Test-Path -Path $firefoxProfilesPath)) {
     Write-Host "We can't find the profile directory, try manual installation."
